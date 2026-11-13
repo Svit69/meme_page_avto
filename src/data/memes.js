@@ -12,6 +12,6 @@ export const memeDefinitions = [
   {
     id: 'horizontal-2', title: 'Это настроение', number: '03',
     caption: 'Без лишних объяснений', orientation: 'landscape',
-    source: '/memes/horizontal-2.jpg', label: 'Горизонтальный',
+    source: '/memes/horizontal-2.png', label: 'Горизонтальный',
   },
 ];
