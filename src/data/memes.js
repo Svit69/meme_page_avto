@@ -10,8 +10,8 @@ export const memeDefinitions = [
     source: '/memes/vertical-1.png', label: 'Вертикальный',
   },
   {
-    id: 'vertical-2', title: 'Это настроение', number: '03',
-    caption: 'Без лишних объяснений', orientation: 'portrait',
-    source: '/memes/vertical-2.jpg', label: 'Вертикальный',
+    id: 'horizontal-2', title: 'Это настроение', number: '03',
+    caption: 'Без лишних объяснений', orientation: 'landscape',
+    source: '/memes/horizontal-2.jpg', label: 'Горизонтальный',
   },
 ];

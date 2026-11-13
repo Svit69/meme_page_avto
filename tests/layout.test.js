@@ -12,6 +12,7 @@ test('landscape rotates on a portrait screen when it increases visible size', ()
   assert.equal(landscape.shouldRotate({ width: 375, height: 720 }, { width: 1920, height: 1080 }), true);
   assert.equal(landscape.shouldRotate({ width: 1200, height: 700 }, { width: 1920, height: 1080 }), false);
   assert.equal(portrait.shouldRotate(), false);
+  assert.equal(catalog.findById('horizontal-2').shouldRotate({ width: 375, height: 720 }, { width: 1920, height: 1080 }), true);
 });
 test('image stays inside viewport for phone, tablet and desktop in both orientations', () => {
   for (const viewport of [{ width: 320, height: 480 }, { width: 768, height: 940 }, { width: 1440, height: 750 }, { width: 800, height: 260 }]) {

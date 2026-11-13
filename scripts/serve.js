@@ -17,7 +17,7 @@ async function serveRequest(request, response) {
     if (rootDirectory === resolve('.') && (pathname.startsWith('/memes/') || pathname === '/favicon.svg')) {
       target = resolve(rootDirectory, 'public', relative);
     }
-    if (/^\/memes\/(horizontal|vertical-[12])\/?$/.test(pathname)) {
+    if (/^\/memes\/(horizontal(?:-2)?|vertical-1)\/?$/.test(pathname)) {
       target = resolve(rootDirectory, 'index.html');
     }
     if (!(await stat(target)).isFile()) throw new Error('Not a file');

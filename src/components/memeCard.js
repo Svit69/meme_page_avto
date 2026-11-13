@@ -3,7 +3,7 @@ import { renderPlaceholder } from './placeholder.js';
 
 export function renderMemeCard(meme) {
   const { id, number, title, caption, source, label } = meme.details;
-  return `<a class="meme-card" href="/memes/${id}" aria-label="Открыть мем: ${title}">
+  return `<a class="meme-card" data-orientation="${meme.details.orientation}" href="/memes/${id}" aria-label="Открыть мем: ${title}">
     <div class="card-preview">
       ${renderPlaceholder(meme)}
       <img class="meme-thumbnail" src="${source}" alt="${title}" hidden>

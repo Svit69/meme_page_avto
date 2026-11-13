@@ -24,7 +24,7 @@
   .collection-count { display: none; }
   .meme-grid { grid-template-columns: 1fr; gap: 30px; }
   .card-preview { height: 320px; }
-  .meme-card:first-child .card-preview { height: 245px; }
+  .meme-card[data-orientation="landscape"] .card-preview { height: 245px; }
   .art-word { font-size: 44px; }
   .card-description h2 { font-size: 21px; }
   .card-description p { font-size: 12px; }
