@@ -1,0 +1,22 @@
+.gallery-shell { max-width: 1440px; margin: auto; padding: 0 64px; }
+.site-header { min-height: 100px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--border); }
+.brand { display: flex; gap: 10px; align-items: center; font-size: 26px; font-weight: 800; letter-spacing: -.07em; }
+.brand > svg { color: var(--accent); width: 35px; height: 35px; }
+.brand-dot { color: var(--accent); }
+.header-note { display: flex; align-items: center; gap: 9px; font-size: 12px; color: var(--muted); }
+.status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.edition { font-size: 10px; letter-spacing: .12em; color: var(--muted); }
+.introduction { padding: 66px 0 54px; }
+.introduction > .eyebrow { color: var(--accent); }
+.introduction h1 { font-size: clamp(56px, 6.9vw, 100px); letter-spacing: -.075em; line-height: 1.02; margin: 24px 0 27px; font-weight: 700; }
+.introduction h1 span { color: var(--accent); }
+.introduction h1 sup { display: inline-block; font-size: .65em; vertical-align: top; margin-left: 22px; color: var(--accent); font-weight: 400; }
+.intro-bottom { display: flex; justify-content: space-between; align-items: end; gap: 20px; }
+.intro-bottom p { color: var(--muted); font-size: 15px; line-height: 1.7; margin: 0; }
+.collection-count { display: flex; gap: 12px; align-items: center; font-size: 10px; letter-spacing: .1em; color: var(--muted); }
+.collection-count b { font-size: 40px; font-weight: 400; letter-spacing: -.08em; color: var(--text); }
+.collection-heading { display: flex; justify-content: space-between; border-top: 1px solid var(--border); padding: 20px 0; font-size: 10px; letter-spacing: .13em; color: var(--muted); }
+.meme-grid { display: grid; grid-template-columns: 1.32fr 1fr 1fr; gap: 22px; }
+.site-footer { display: flex; justify-content: space-between; align-items: center; gap: 24px; border-top: 1px solid var(--border); margin-top: 55px; padding: 24px 0 30px; color: var(--muted); font-size: 11px; }
+.site-footer > span:last-child { display: flex; align-items: center; gap: 18px; }
+.site-footer svg { width: 16px; height: 16px; color: var(--accent); }

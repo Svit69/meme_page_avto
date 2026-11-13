@@ -1,0 +1,13 @@
+.meme-card { display: block; min-width: 0; }
+.card-preview { height: 300px; background: var(--surface); border-radius: 12px; overflow: hidden; position: relative; border: 1px solid transparent; transition: border-color .2s; }
+.meme-card:hover .card-preview { border-color: var(--accent); }
+.meme-thumbnail { width: 100%; height: 100%; object-fit: contain; }
+.format-badge { position: absolute; top: 14px; left: 14px; padding: 7px 10px; border-radius: 30px; font-size: 10px; color: #fff; background: #151613b8; backdrop-filter: blur(10px); }
+.card-open { position: absolute; right: 14px; bottom: 14px; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: #151613; color: var(--text); transition: background .2s, color .2s; }
+.meme-card:hover .card-open { background: var(--accent); color: var(--background); }
+.card-description { display: flex; align-items: start; padding: 19px 0 0; gap: 14px; }
+.card-number { font-size: 10px; color: var(--muted); padding-top: 5px; }
+.card-description h2 { font-size: 20px; letter-spacing: -.04em; margin: 0 0 7px; font-weight: 500; }
+.card-description p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.card-direction { margin-left: auto; color: var(--muted); }
+.card-direction svg { width: 19px; height: 19px; }

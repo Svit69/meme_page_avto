@@ -1,0 +1,27 @@
+:root {
+  color-scheme: dark;
+  --background: #151613;
+  --surface: #22231e;
+  --text: #f3f2eb;
+  --muted: #a3a59a;
+  --accent: #d2fa69;
+  --border: #36382f;
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
+  color: var(--text);
+  background: var(--background);
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 280px; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button:enabled { cursor: pointer; }
+button:disabled { opacity: .35; }
+svg { width: 24px; height: 24px; flex-shrink: 0; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+::selection { background: var(--accent); color: var(--background); }
+.eyebrow { font-size: 11px; letter-spacing: .17em; font-weight: 600; }
+.not-found { max-width: 800px; padding: 15vh 7vw; }
+.not-found h1 { font-size: clamp(32px, 6vw, 70px); }

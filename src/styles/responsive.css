@@ -1,0 +1,41 @@
+@media (min-width: 1500px) {
+  .introduction { padding-top: 85px; }
+  .card-preview { height: 340px; }
+}
+@media (max-width: 1000px) {
+  .gallery-shell { padding: 0 32px; }
+  .header-note { display: none; }
+  .meme-grid { gap: 16px; grid-template-columns: repeat(3, 1fr); }
+  .card-preview { height: 270px; }
+  .card-description { gap: 8px; }
+  .card-description h2 { font-size: 17px; }
+  .card-direction { display: none; }
+}
+@media (max-width: 650px) {
+  .gallery-shell { padding: 0 20px; }
+  .site-header { min-height: 78px; }
+  .brand { font-size: 23px; }
+  .edition { font-size: 9px; }
+  .introduction { padding: 44px 0 35px; }
+  .introduction h1 { font-size: clamp(44px, 11.6vw, 75px); margin-top: 22px; }
+  .introduction h1 sup { margin-left: 12px; }
+  .eyebrow { font-size: 9px; }
+  .intro-bottom p { font-size: 13px; }
+  .collection-count { display: none; }
+  .meme-grid { grid-template-columns: 1fr; gap: 30px; }
+  .card-preview { height: 320px; }
+  .meme-card:first-child .card-preview { height: 245px; }
+  .art-word { font-size: 44px; }
+  .card-description h2 { font-size: 21px; }
+  .card-description p { font-size: 12px; }
+  .card-direction { display: block; }
+  .site-footer { margin-top: 35px; font-size: 10px; }
+  .site-footer > span:last-child { max-width: 130px; line-height: 1.6; }
+  .viewer-toolbar { padding: 8px; gap: 6px; }
+  .viewer-title { font-size: 10px; max-width: 100px; }
+  .viewer-toolbar .control { padding: 10px; }
+  .viewer-toolbar a span { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+}
