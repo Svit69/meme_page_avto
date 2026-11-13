@@ -28,7 +28,7 @@ test('image stays inside viewport for phone, tablet and desktop in both orientat
 });
 test('catalog encapsulates its collection and models expose immutable data', () => {
   catalog.getAll().pop();
-  assert.equal(catalog.getAll().length, 3);
+  assert.equal(catalog.getAll().length, memeDefinitions.length);
   assert.equal(catalog.findById('missing'), undefined);
   assert.throws(() => new Meme({}), TypeError);
   assert.throws(() => { landscape.details.id = 'changed'; }, TypeError);

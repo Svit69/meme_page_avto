@@ -2,6 +2,7 @@ import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { extname, resolve, sep } from 'node:path';
 import { contentTypes } from './serverTypes.js';
+import { memeDefinitions } from '../src/data/memes.js';
 
 const rootDirectory = resolve(process.argv[2] || '.');
 const port = Number(process.env.PORT || 5173);
@@ -17,7 +18,7 @@ async function serveRequest(request, response) {
     if (rootDirectory === resolve('.') && (pathname.startsWith('/memes/') || pathname === '/favicon.svg')) {
       target = resolve(rootDirectory, 'public', relative);
     }
-    if (/^\/memes\/(horizontal(?:-2)?|vertical-1)\/?$/.test(pathname)) {
+    if (memeDefinitions.some(({ id }) => pathname.replace(/\/$/, '') === `/memes/${id}`)) {
       target = resolve(rootDirectory, 'index.html');
     }
     if (!(await stat(target)).isFile()) throw new Error('Not a file');

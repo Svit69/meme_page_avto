@@ -2,6 +2,8 @@
 .art-01 { background: var(--accent); }
 .art-02 { background: #e8e8e8; }
 .art-03 { background: #f5a0a4; }
+.art-04 { background: #e8e8e8; }
+.art-05 { background: #f5a0a4; }
 .art-label { position: absolute; right: 17px; top: 20px; font-size: 9px; letter-spacing: .14em; opacity: .6; }
 .art-face { width: 93px; height: 93px; border: 3px solid currentColor; border-radius: 50%; position: relative; transform: rotate(-12deg); }
 .art-face i { display: block; position: absolute; width: 7px; height: 13px; background: currentColor; top: 25px; border-radius: 50%; }

@@ -16,4 +16,4 @@ for (const meme of memeDefinitions) {
 }
 await cp('index.html', resolve(outputDirectory, '404.html'));
 if (!page.includes('charset="UTF-8"')) throw new Error('UTF-8 charset is required');
-console.log('Built gallery and three standalone meme pages in dist/');
+console.log(`Built gallery and ${memeDefinitions.length} standalone meme pages in dist/`);

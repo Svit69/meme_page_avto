@@ -14,4 +14,14 @@ export const memeDefinitions = [
     caption: 'Без лишних объяснений', orientation: 'landscape',
     source: '/memes/horizontal-2.png', label: 'Горизонтальный',
   },
+  {
+    id: 'vertical-2', title: 'Поймал момент', number: '04',
+    caption: 'Тот самый кадр', orientation: 'portrait',
+    source: '/memes/vertical-2.png', label: 'Вертикальный',
+  },
+  {
+    id: 'vertical-3', title: 'Без комментариев', number: '05',
+    caption: 'Картинка говорит сама за себя', orientation: 'portrait',
+    source: '/memes/vertical-3.png', label: 'Вертикальный',
+  },
 ];

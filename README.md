@@ -1,14 +1,14 @@
 # Мемотека
 
-Галерея трёх мемов на чистом JavaScript, HTML и CSS. Главная: `/`.
+Галерея пяти мемов на чистом JavaScript, HTML и CSS. Главная: `/`.
 Отдельные страницы: `/memes/horizontal`,
-`/memes/vertical-1`, `/memes/horizontal-2`.
+`/memes/vertical-1`, `/memes/horizontal-2`, `/memes/vertical-2`, `/memes/vertical-3`.
 
 ## Картинки
 
 Папка: `public/memes/`. Подробности — в её `README.md`.
 Первые две картинки подключены как `horizontal.png` и `vertical-1.png`.
-Вторая горизонтальная картинка подключена как `horizontal-2.png`.
+Также подключены `horizontal-2.png`, `vertical-2.png` и `vertical-3.png`.
 Названия, подписи и пути изменяются в `src/data/memes.js`.
 Без файла показывается заглушка. Изображения всегда помещаются целиком.
 Горизонтальный мем автоматически поворачивается на портретном экране,
