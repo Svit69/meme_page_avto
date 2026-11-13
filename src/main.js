@@ -2,9 +2,11 @@ import { memeDefinitions } from './data/memes.js';
 import { MemeCatalog } from './models/MemeCatalog.js';
 import { GalleryView } from './views/GalleryView.js';
 import { MemeViewer } from './views/MemeViewer.js';
+import { GalleryNavigation } from './services/GalleryNavigation.js';
 
 const root = document.querySelector('#app');
 const catalog = new MemeCatalog(memeDefinitions);
+new GalleryNavigation(root, catalog);
 const pathname = window.location.pathname.replace(/\/$/, '');
 const meme = catalog.findById(pathname.split('/')[2]);
 

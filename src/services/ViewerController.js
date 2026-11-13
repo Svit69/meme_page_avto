@@ -1,5 +1,5 @@
 import { calculateImageLayout } from './imageLayout.js';
-import { toggleFullscreen } from './fullscreen.js';
+import { connectFullscreenControl } from './fullscreenControl.js';
 
 export class ViewerController {
   #rotation = null;
@@ -25,8 +25,7 @@ export class ViewerController {
       this.#rotation = !this.isRotated;
       this.updateImageLayout();
     });
-    const fullscreenButton = root.querySelector('#toggle-fullscreen');
-    fullscreenButton.addEventListener('click', () => toggleFullscreen(root.querySelector('.viewer'), fullscreenButton, this.status));
+    connectFullscreenControl(root, this.status);
     this.observer = new ResizeObserver(() => this.updateImageLayout());
     this.observer.observe(this.stage);
   }

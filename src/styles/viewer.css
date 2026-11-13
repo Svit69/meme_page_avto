@@ -12,5 +12,4 @@
 .viewer-placeholder .placeholder-art { height: min(260px, 40dvh); border-radius: 12px; }
 .viewer-placeholder .art-word { font-size: 32px; }
 .viewer-placeholder p { margin: 20px 0 10px; }
-.viewer-placeholder a { color: var(--accent); display: inline-flex; align-items: center; min-height: 44px; }
 .viewer-loading { color: var(--muted); }
