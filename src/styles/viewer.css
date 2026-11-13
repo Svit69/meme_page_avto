@@ -1,4 +1,4 @@
-.viewer { background: #0b0c0a; height: 100vh; height: 100dvh; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+.viewer { background: #0b0b0b; height: 100vh; height: 100dvh; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
 .viewer-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 20px; }
 .control { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); color: var(--text); padding: 10px 12px; font-size: 13px; }
 .control:hover:enabled, a.control:hover { border-color: var(--accent); }
