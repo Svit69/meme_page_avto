@@ -1,5 +1,4 @@
 import { calculateImageLayout } from './imageLayout.js';
-import { connectFullscreenControl } from './fullscreenControl.js';
 
 export class ViewerController {
   #rotation = null;
@@ -25,7 +24,6 @@ export class ViewerController {
       this.#rotation = !this.isRotated;
       this.updateImageLayout();
     });
-    connectFullscreenControl(root, this.status);
     this.observer = new ResizeObserver(() => this.updateImageLayout());
     this.observer.observe(this.stage);
   }

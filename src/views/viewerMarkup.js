@@ -7,7 +7,6 @@ export function renderViewerMarkup(meme) {
     <header class="viewer-toolbar">
       <div class="viewer-actions">
         <button class="control" id="rotate-image" aria-label="Повернуть изображение на 90 градусов">${renderIcon('rotate')}</button>
-        <button class="control" id="toggle-fullscreen" aria-label="Включить полноэкранный режим">${renderIcon('expand')}</button>
       </div>
     </header>
     <div class="viewer-stage"><img class="viewer-image" src="${source}" alt="${title}" hidden>
