@@ -32,7 +32,6 @@
   .site-footer { margin-top: 35px; font-size: 10px; }
   .site-footer > span:last-child { max-width: 130px; line-height: 1.6; }
   .viewer-toolbar { padding: 8px; gap: 6px; }
-  .viewer-title { font-size: 10px; max-width: 100px; }
   .viewer-toolbar .control { padding: 10px; }
   .viewer-toolbar a span { display: none; }
 }

@@ -7,7 +7,7 @@ export class ViewerController {
     this.meme = meme;
     this.stage = root.querySelector('.viewer-stage');
     this.image = root.querySelector('.viewer-image');
-    this.status = root.querySelector('.viewer-hint');
+    this.status = root.querySelector('.viewer-status');
     this.rotateButton = root.querySelector('#rotate-image');
     this.rotateButton.disabled = true;
     this.image.addEventListener('load', () => {
